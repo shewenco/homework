@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basit Slider</title>
+  <title>Slider</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="slider">
     <div class="slides">
-      <img src="bjk1.jpg" alt="Slider 1">
-      <img src="bjk2.png" alt="Slider 2">
-      <img src="bjk4.jpg" alt="Slider 3">
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x400/ff7f7f/333333" alt="Slider 1">
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x400/7f7fff/333333" alt="Slider 2">
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x400/7fff7f/333333" alt="Slider 3">
+      </div>
     </div>
+    <!-- Previous and Next Buttons -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
   </div>
 
   <script src="script.js"></script>
